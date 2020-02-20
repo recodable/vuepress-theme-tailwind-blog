@@ -1,8 +1,8 @@
 {
-  "name": "@recodable/vuepress-tailwind-blog-theme",
+  "name": "@recodable/vuepress-theme-tailwind-blog",
   "version": "0.0.1",
   "main": "index.js",
-  "repository": "https://github.com/recodable/vuepress-tailwind-blog-theme.git",
+  "repository": "https://github.com/recodable/vuepress-theme-tailwind-blog.git",
   "author": "Steven Yung <stevenyung@icloud.com>",
   "license": "MIT",
   "scripts": {
