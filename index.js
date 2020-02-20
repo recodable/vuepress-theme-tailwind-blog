@@ -24,17 +24,17 @@ module.exports = themeConfig => {
     ]
   };
 
-  const properties = [
-    "directories",
-    "frontmatters",
-    "globalPagination",
-    "sitemap",
-    "comment",
-    "newsletter"
-  ];
-  const themeConfigPluginOptions = {
-    ...pick(themeConfig, properties)
-  };
+  // const properties = [
+  //   "directories",
+  //   "frontmatters",
+  //   "globalPagination",
+  //   "sitemap",
+  //   "comment",
+  //   "newsletter"
+  // ];
+  // const themeConfigPluginOptions = {
+  //   ...pick(themeConfig, properties)
+  // };
 
   const blogPluginOptions = Object.assign(
     {},
@@ -42,27 +42,27 @@ module.exports = themeConfig => {
     themeConfigPluginOptions
   );
 
-  const plugins = [
-    ["@vuepress/blog", blogPluginOptions]
-    // [
-    //   "@vuepress/google-analytics",
-    //   {
-    //     ga: "UA-135207098-1"
-    //   }
-    // ],
-    // [
-    //   "vuepress-plugin-mailchimp",
-    //   {
-    //     // You need to provide this plugin with your Mailchimp endpoint in order for it
-    //     // to know where to save the email address. See more detail in Config section.
-    //     endpoint:
-    //       "https://icloud.us20.list-manage.com/subscribe/post?u=b334cab704e8cf9d86349a6c1&amp;id=27383beab6"
-    //   }
-    // ]
-  ];
+  // const plugins = [
+  //   ["@vuepress/blog", blogPluginOptions]
+  //   // [
+  //   //   "@vuepress/google-analytics",
+  //   //   {
+  //   //     ga: "UA-135207098-1"
+  //   //   }
+  //   // ],
+  //   // [
+  //   //   "vuepress-plugin-mailchimp",
+  //   //   {
+  //   //     // You need to provide this plugin with your Mailchimp endpoint in order for it
+  //   //     // to know where to save the email address. See more detail in Config section.
+  //   //     endpoint:
+  //   //       "https://icloud.us20.list-manage.com/subscribe/post?u=b334cab704e8cf9d86349a6c1&amp;id=27383beab6"
+  //   //   }
+  //   // ]
+  // ];
 
   const config = {
-    plugins
+    ["@vuepress/blog", blogPluginOptions]
   };
 
   return config;
