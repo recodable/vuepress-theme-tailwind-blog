@@ -1,7 +1,7 @@
 module.exports = {
   postcss: {
     plugins: [require("tailwindcss")("./tailwind.js"), require("autoprefixer")]
-  }
+  },
   title: "Steven Yung",
   theme: require.resolve("../../"),
   themeConfig: {
@@ -14,5 +14,5 @@ module.exports = {
       { url: "https://dev.to/stvnyung", name: "Dev.to" },
       { url: "https://www.instagram.com/stvn.yung/", name: "Instagram" }
     ]
-  },
+  }
 };
