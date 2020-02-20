@@ -29,11 +29,9 @@ module.exports = themeConfig => {
     ...pick(themeConfig, properties)
   };
 
-  const blogPluginOptions = Object.assign(
-    {},
-    defaultBlogPluginOptions,
-    themeConfigPluginOptions
-  );
+  const blogPluginOptions = Object.assign({}, defaultBlogPluginOptions, {
+    themeConfig: themeConfigPluginOptions
+  });
 
   const plugins = [
     ["@vuepress/blog", blogPluginOptions]
