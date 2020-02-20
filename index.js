@@ -24,14 +24,7 @@ module.exports = themeConfig => {
     ]
   };
 
-  const properties = [
-    "directories"
-    // "frontmatters",
-    // "globalPagination",
-    // "sitemap",
-    // "comment",
-    // "newsletter"
-  ];
+  const properties = ["name", "description", "profile", "socialLinks"];
   const themeConfigPluginOptions = {
     ...pick(themeConfig, properties)
   };
