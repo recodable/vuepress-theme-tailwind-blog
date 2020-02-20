@@ -16,7 +16,7 @@
     </router-link>
 
     <social-link-list
-      v-if="$themeConfig.socialLinks.length"
+      v-if="$themeConfig.socialLinks && $themeConfig.socialLinks.length"
       :links="$themeConfig.socialLinks"
     />
   </div>
