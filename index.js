@@ -1,6 +1,6 @@
 const pick = require("lodash.pick");
 
-module.exports = themeConfig => {
+module.exports = (themeConfig = {}) => {
   themeConfig = Object.assign(themeConfig, {
     name: themeConfig.name || "Steven Yung",
     description:
