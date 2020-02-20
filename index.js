@@ -1,17 +1,19 @@
 const pick = require("lodash.pick");
 
 module.exports = themeConfig => {
-  themeConfig = {
-    name: "Steven Yung",
-    description: "A developer trying to break out of traditional 9-5.",
-    profile: "/profile.jpg",
-    socialLinks: [
+  themeConfig = Object.assign(themeConfig, {
+    name: themeConfig.name || "Steven Yung",
+    description:
+      themeConfig.description ||
+      "A developer trying to break out of traditional 9-5.",
+    profile: themeConfig.profile || "/profile.jpg",
+    socialLinks: themeConfig.socialLinks || [
       { url: "https://twitter.com/stvnyung", name: "Twitter" },
       { url: "https://github.com/stvnyung", name: "Github" },
       { url: "https://dev.to/stvnyung", name: "Dev.to" },
       { url: "https://www.instagram.com/stvn.yung/", name: "Instagram" }
     ]
-  };
+  });
 
   const defaultBlogPluginOptions = {
     directories: [
@@ -24,13 +26,13 @@ module.exports = themeConfig => {
     ]
   };
 
-  const properties = ["name", "description", "profile", "socialLinks"];
-  const themeConfigPluginOptions = {
-    ...pick(themeConfig, properties)
-  };
+  // const properties = ["name", "description", "profile", "socialLinks"];
+  // const themeConfigPluginOptions = {
+  //   ...pick(themeConfig, properties)
+  // };
 
   const blogPluginOptions = Object.assign({}, defaultBlogPluginOptions, {
-    themeConfig: themeConfigPluginOptions
+    themeConfig
   });
 
   const plugins = [
