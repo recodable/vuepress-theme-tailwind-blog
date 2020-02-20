@@ -17,5 +17,8 @@
     "vue-fragment": "^1.5.1",
     "vuepress": "next",
     "vuepress-plugin-mailchimp": "^1.4.1"
+  },
+  "dependencies": {
+    "lodash.pick": "^4.4.0"
   }
 }
