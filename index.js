@@ -25,12 +25,12 @@ module.exports = themeConfig => {
   };
 
   const properties = [
-    "directories",
-    "frontmatters",
-    "globalPagination",
-    "sitemap",
-    "comment",
-    "newsletter"
+    "directories"
+    // "frontmatters",
+    // "globalPagination",
+    // "sitemap",
+    // "comment",
+    // "newsletter"
   ];
   const themeConfigPluginOptions = {
     ...pick(themeConfig, properties)
