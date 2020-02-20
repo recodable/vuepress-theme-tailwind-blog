@@ -14,7 +14,3 @@ export default {
   components: { DefaultGlobalLayout: GlobalLayout, ProfileCard }
 };
 </script>
-
-<style lang="stylus">
-@import '../styles/theme.styl';
-</style>
