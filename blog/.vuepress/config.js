@@ -1,16 +1,6 @@
-const purgecss = require("@fullhuman/postcss-purgecss")({
-  content: ["**/*.vue"],
-  css: ["**/*.styl"],
-  defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
-});
-
 module.exports = {
   postcss: {
-    plugins: [
-      require("tailwindcss")("./tailwind.js"),
-      require("autoprefixer"),
-      ...(process.env.NODE_ENV === "production" ? [purgecss] : [])
-    ]
+    plugins: [require("tailwindcss")("./tailwind.js"), require("autoprefixer")]
   },
   title: "Steven Yung",
   theme: require.resolve("../../"),
