@@ -1,6 +1,6 @@
 {
   "name": "@recodable/vuepress-theme-tailwind-blog",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "main": "index.js",
   "repository": "https://github.com/recodable/vuepress-theme-tailwind-blog.git",
   "author": "Steven Yung <stevenyung@icloud.com>",
