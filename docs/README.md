@@ -4,7 +4,7 @@
 
 ## Intro
 
-> A minimalistic blog theme powered by Vuepress and Tailwind.css
+> A minimalistic blog theme powered by Vuepress and Tailwind.css made by Recodable with :heart:
 
 This is a ready to use personal blog theme made with Tailwind.css. It's not customizable because of an issue regarding using PostCSS into a Vuepress plugin / theme.
 
