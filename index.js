@@ -40,7 +40,7 @@ module.exports = themeConfig => {
 
   const plugins = [
     ["@vuepress/blog", blogPluginOptions],
-    ...(process.env.NODE_END === "production" && themeConfig.googleAnalyticsId
+    ...(process.env.NODE_ENV === "production" && themeConfig.googleAnalyticsId
       ? [
           [
             "@vuepress/google-analytics",
