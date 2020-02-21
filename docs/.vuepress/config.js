@@ -16,7 +16,7 @@ module.exports = {
         link: "https://github.com/recodable/vuepress-theme-tailwind-blog"
       },
       {
-        text: "Creator",
+        text: "Maintainer",
         link: "https://twitter.com/stvnyung"
       }
     ],
