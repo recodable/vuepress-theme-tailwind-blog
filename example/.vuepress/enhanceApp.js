@@ -1,1 +1,3 @@
-export default ({ Vue }) => {};
+import "../../styles/index.css";
+
+export default () => {};
