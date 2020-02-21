@@ -15,6 +15,7 @@ module.exports = themeConfig => {
       { url: "https://www.instagram.com/stvn.yung/", name: "Instagram" }
     ],
     newsletterEndpoint: themeConfig.newsletterEndpoint || null,
+    newsletterContent: themeConfig.newsletterContent || null,
     googleAnalyticsId: themeConfig.googleAnalyticsId || null
   });
 
@@ -57,7 +58,8 @@ module.exports = themeConfig => {
             {
               // You need to provide this plugin with your Mailchimp endpoint in order for it
               // to know where to save the email address. See more detail in Config section.
-              endpoint: themeConfig.newsletterEndpoint
+              endpoint: themeConfig.newsletterEndpoint,
+              content: themeConfig.newsletterContent
             }
           ]
         ]

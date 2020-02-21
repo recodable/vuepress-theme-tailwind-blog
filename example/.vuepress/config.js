@@ -13,6 +13,8 @@ module.exports = {
     ],
     newsletterEndpoint:
       "https://icloud.us20.list-manage.com/subscribe/post?u=b334cab704e8cf9d86349a6c1&amp;id=27383beab6",
+    newsletterContent:
+      "Subscribe to get my lastest content. I post every two weeks about entrepreneurship and tech. No spam.",
     googleAnalyticsId: "UA-135207098-1"
   }
 };
