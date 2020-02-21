@@ -10,6 +10,9 @@ module.exports = {
       { url: "https://github.com/stvnyung", name: "Github" },
       { url: "https://dev.to/stvnyung", name: "Dev.to" },
       { url: "https://www.instagram.com/stvn.yung/", name: "Instagram" }
-    ]
+    ],
+    newsletterEndpoint:
+      "https://icloud.us20.list-manage.com/subscribe/post?u=b334cab704e8cf9d86349a6c1&amp;id=27383beab6",
+    googleAnalyticsId: "UA-135207098-1"
   }
 };
