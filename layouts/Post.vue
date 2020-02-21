@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     format(date) {
-      return format(new Date(date), "MMMM dd, yyyy");
+      return format(new Date(date), this.$themeConfig.dateFormat);
     }
   }
 };

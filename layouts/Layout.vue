@@ -30,7 +30,7 @@ import { format } from "date-fns";
 export default {
   methods: {
     format(date) {
-      return format(new Date(date), "MMMM DD, YYYY");
+      return format(new Date(date), this.$themeConfig.dateFormat);
     }
   }
 };

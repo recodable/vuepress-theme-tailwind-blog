@@ -7,6 +7,7 @@ module.exports = themeConfig => {
       themeConfig.description ||
       "A developer trying to break out of traditional 9-5.",
     profile: themeConfig.profile || "/profile.jpg",
+    dateFormat: themeConfig.dateForm || "MMMM DD, YYYY",
     socialLinks: themeConfig.socialLinks || [
       { url: "https://twitter.com/stvnyung", name: "Twitter" },
       { url: "https://github.com/stvnyung", name: "Github" },
