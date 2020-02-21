@@ -7,8 +7,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "vuepress dev example",
+    "dev:docs": "vuepress dev docs",
     "build-styles": "parcel build styles/styles.css --out-dir styles --out-file index.css --no-source-maps",
     "build": "yarn run build-styles; vuepress build example",
+    "build:docs": "vuepress build docs",
     "prepublish": "yarn run build-styles",
     "postpublish": "git push"
   },
