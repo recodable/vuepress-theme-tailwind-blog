@@ -2,6 +2,8 @@
 
 ![Example](./docs/example.png)
 
+[Full documentation](https://vuepress-theme-tailwind-blog.netlify.com)
+
 # Guide
 
 ## Intro
