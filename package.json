@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "vuepress dev example",
-    "build": "vuepress build example"
+    "build-styles": "parcel build styles/styles.css --out-dir styles --out-file index.css",
+    "build": "yarn build-styles; vuepress build example",
+    "publish": "yarn build-styles; yarn publish"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6",

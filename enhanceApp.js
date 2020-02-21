@@ -1,3 +1,3 @@
-import "./dist/index.css";
+import "./styles/index.css";
 
 export default () => {};
