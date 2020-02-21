@@ -16,7 +16,7 @@
 
     <Content />
 
-    <div class="mt-8">
+    <div class="newsletter-container mt-8">
       <simple-newsletter />
     </div>
 

@@ -37,11 +37,11 @@
   @apply .bg-gray-300 .px-1 .rounded-sm .text-blue-600;
 }
 
-.newsletter__button {
+.newsletter-container .newsletter__button {
   @apply .bg-blue-600;
 }
 
-.newsletter__wrap {
+.newsletter-container .newsletter__wrap {
   max-width: 100%;
   @apply .m-0 .w-full;
 }
