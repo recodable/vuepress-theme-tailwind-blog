@@ -6,8 +6,8 @@
   "author": "Steven Yung <stevenyung@icloud.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev blog",
-    "build": "vuepress build blog"
+    "dev": "vuepress dev example",
+    "build": "vuepress build example"
   },
   "devDependencies": {
     "@vuepress/plugin-blog": "latest",
