@@ -1,6 +1,6 @@
 {
   "name": "@recodable/vuepress-theme-tailwind-blog",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "repository": "https://github.com/recodable/vuepress-theme-tailwind-blog.git",
   "author": "Steven Yung <stevenyung@icloud.com>",
@@ -9,7 +9,8 @@
     "dev": "vuepress dev example",
     "build-styles": "parcel build styles/styles.css --out-dir styles --out-file index.css --no-source-maps",
     "build": "yarn run build-styles; vuepress build example",
-    "prepublish": "yarn run build-styles"
+    "prepublish": "yarn run build-styles",
+    "postpublish": "git push"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6",
